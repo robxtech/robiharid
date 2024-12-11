@@ -27,7 +27,7 @@ useHead({
       content: "Discover my latest projects and reach out through the contact section",
     },
     { property: "og:image", content: "/public/logo.svg" },
-    { property: "og:url", content: "https://robi-harid" },
+    { property: "og:url", content: "https://robi-harid.vercel.app" },
     { property: "og:type", content: "website" },
     { name: "twitter:title", content: "Contact & Projects | Robi Harid" },
     { name: "twitter:description", content: "Check out my portfolio and contact me easily." },
@@ -39,7 +39,7 @@ useHead({
 <template>
   <div class="w-full flex justify-center items-center px-8 lg:px-[120px]">
     <div class="w-full flex flex-row justify-between items-center py-6 gap-4 max-w-[1200px]">
-      <nuxt-img src="../public/logo.svg" alt="Logo" width="32" height="32" />
+      <NuxtImg placeholder src="/logo.svg" alt="Logo" width="32" height="32" />
       <div class="flex flex-row gap-4">
         <Button class="z-[4000]" @click="scrollToContact" variant="text" size="small">Contact with me</Button>
         <Button class="z-[4000]" @click="scrollToMyProject" variant="primary" size="small">My Project</Button>

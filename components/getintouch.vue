@@ -17,7 +17,7 @@ useHead({
       content: "Reach out to Robi to learn more about RecruitMate AI or book keynote events. Use our contact form for direct communication.",
     },
     { property: "og:image", content: "/robi-getin-touch.svg" },
-    { property: "og:url", content: "https://robi-harid" },
+    { property: "og:url", content: "https://robi-harid.vercel.app" },
     { property: "og:type", content: "website" },
     { name: "twitter:title", content: "Get In Touch - Contact Robi | RecruitMate AI" },
     { name: "twitter:description", content: "Learn more about RecruitMate AI or connect with Robi through our contact form." },
@@ -41,7 +41,7 @@ useHead({
           To get in touch with Robi, learn more about RecruitMate AI or book keynote speaking events, please contact Robi through the form below.
         </p>
 
-        <!-- Contact Form (Zapier Integration) -->
+        <!-- Contact Form  -->
         <form class="space-y-4 w-full" action="https://hooks.zapier.com/hooks/catch/your-zap-id/" method="POST">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-7">
             <Input name="email" placeholder="example@example.com" type="email" label="Email" size="medium" required />
@@ -74,7 +74,8 @@ useHead({
       </div>
 
       <!-- Contact Image -->
-      <nuxt-img
+      <NuxtImg
+        placeholder
         src="/robi-getin-touch.svg"
         alt="Robi Group"
         quality="85"

@@ -57,21 +57,22 @@ useHead({
         <div
           v-for="(testimonial, index) in testimonials"
           :key="index"
-          class="max-w-full max-w-[350px] flex flex-col gap-6 text-white rounded-[1.5rem] p-6 md:p-8 shadow-lg border-[#FFFFFF24] border"
+          class="max-w-full max-w-[350px] flex flex-col justify-between text-white rounded-[1.5rem] p-6 md:p-8 shadow-lg border-[#FFFFFF24] border min-h-[400px]"
         >
           <!-- Company Logo -->
           <div class="mb-4 flex">
-            <nuxt-img :src="testimonial.logo" :alt="testimonial.company + ' Logo'" class="w-16 md:w-24" />
+            <NuxtImg :src="testimonial.logo" :alt="testimonial.company + ' Logo'" class="w-16 md:w-24 h-10 md:h-12" />
           </div>
 
           <!-- Testimonial Text -->
-          <p class="text-base md:text-lg font-medium leading-relaxed mb-4 md:mb-6 tracking-[-0.3px]">
+          <p class="text-[18px] md:text-lg font-[500] leading-relaxed mb-4 md:mb-6 leading-[1.33] tracking-[1.2px] flex-grow mt-4">
+            <!-- flex-grow eklendi -->
             {{ testimonial.text }}
           </p>
 
           <!-- Author Information -->
-          <div class="flex gap-4 flex-col">
-            <nuxt-img :src="testimonial.avatar" :alt="testimonial.name + ' Avatar'" class="w-10 h-10 md:w-12 md:h-12 rounded-full" />
+          <div class="flex gap-4 items-center">
+            <NuxtImg placeholder :src="testimonial.avatar" :alt="testimonial.name + ' Avatar'" class="w-10 h-10 md:w-12 md:h-12 rounded-full" />
             <div>
               <p class="font-bold">{{ testimonial.name }}</p>
               <p class="text-sm text-gray-400">{{ testimonial.position }}</p>

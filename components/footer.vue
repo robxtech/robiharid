@@ -9,21 +9,27 @@ const scrollToTop = () => {
 useHead({
   title: "Robi Harid",
   meta: [
-    { name: "description", content: "Stay updated with our latest updates, monthly summaries, and team picks. Subscribe to our newsletter today." },
+    {
+      name: "description",
+      content:
+        "Robi Harid is an accomplished entrepreneur with over 10 years' experience leading projects for global brands including TOSHIBA and HSBC.",
+    },
     { name: "keywords", content: "newsletter, updates, monthly summaries, behind the scenes, team picks, Robi Harid" },
     { name: "author", content: "Robi Harid" },
     { property: "og:title", content: "Subscribe to Our Newsletter - Robi Harid" },
     {
       property: "og:description",
-      content: "Stay updated with our latest updates, monthly summaries, and team picks. Subscribe to our newsletter today.",
+      content:
+        "Robi Harid is an accomplished entrepreneur with over 10 years' experience leading projects for global brands including TOSHIBA and HSBC.",
     },
     { property: "og:image", content: "/public/logo.svg" },
-    { property: "og:url", content: "https://robi-harid" },
+    { property: "og:url", content: "https://robi-harid.vercel.app" },
     { property: "og:type", content: "website" },
     { name: "twitter:title", content: "Subscribe to Our Newsletter - Robi Harid" },
     {
       name: "twitter:description",
-      content: "Stay updated with our latest updates, monthly summaries, and team picks. Subscribe to our newsletter today.",
+      content:
+        "Robi Harid is an accomplished entrepreneur with over 10 years' experience leading projects for global brands including TOSHIBA and HSBC.",
     },
     { name: "twitter:image", content: "/public/logo.svg" },
   ],
@@ -56,7 +62,7 @@ useHead({
       <div class="flex flex-col md:flex-row items-center justify-between gap-4">
         <p class="text-sm text-[#FFFFFF99] leading-[1.43] tracking-[-0.1px] text-center md:text-left">© 2025 Robi Harid</p>
 
-        <nuxt-img width="32" height="32" @click="scrollToTop" src="../public/logo.svg" alt="Logo" class="cursor-pointer" />
+        <NuxtImg placeholder width="32" height="32" @click="scrollToTop" src="/logo.svg" alt="Logo" class="cursor-pointer" />
 
         <div class="flex gap-4">
           <a href="https://x.com/robiharid" target="_blank" rel="noopener noreferrer" aria-label="Twitter">

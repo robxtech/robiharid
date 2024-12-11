@@ -14,7 +14,7 @@ useHead({
       content: "Discover Robi Harid's journey, leading innovative projects and founding RecruitMate AI to transform recruitment processes.",
     },
     { property: "og:image", content: "/public/robi-harid-story-image.svg" },
-    { property: "og:url", content: "https://robi-harid" },
+    { property: "og:url", content: "https://robi-harid.vercel.app" },
     { property: "og:type", content: "website" },
     { name: "twitter:title", content: "My Story - Robi Harid | RecruitMate AI Founder" },
     { name: "twitter:description", content: "Learn about Robi Harid's journey as a technology leader and founder of RecruitMate AI." },
@@ -28,7 +28,7 @@ useHead({
     <div class="max-w-[1200px] w-full flex flex-col lg:flex-row items-start gap-6 lg:gap-12 py-10 lg:py-20">
       <!-- Story Image -->
       <div class="flex justify-center w-full lg:w-auto">
-        <nuxt-img src="../public/robi-harid-story-image.svg" alt="Robi Harid" class="rounded-lg shadow-lg h-[500px] w-[510px] object-cover" />
+        <NuxtImg placeholder src="/robi-harid-story-image.svg" alt="Robi Harid" class="rounded-lg shadow-lg h-[500px] w-[510px] object-cover" />
       </div>
 
       <!-- Story Content -->
