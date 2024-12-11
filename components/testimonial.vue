@@ -55,6 +55,8 @@ useHead({
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <!-- Testimonial Card -->
         <div
+          v-motion-slide-visible-once-top
+          :delay="300"
           v-for="(testimonial, index) in testimonials"
           :key="index"
           class="max-w-full max-w-[350px] flex flex-col justify-between text-white rounded-[1.5rem] p-6 md:p-8 shadow-lg border-[#FFFFFF24] border min-h-[400px]"

@@ -27,13 +27,13 @@ useHead({
   <div class="flex w-full justify-center items-center py-[80px] px-8 lg:px-[120px]">
     <div class="max-w-[1200px] w-full flex flex-col lg:flex-row items-start gap-6 lg:gap-12 py-10 lg:py-20">
       <!-- Story Image -->
-      <div class="flex justify-center w-full lg:w-auto">
+      <div v-motion-fade-visible :delay="200" class="flex justify-center w-full lg:w-auto">
         <NuxtImg placeholder src="/robi-harid-story-image.svg" alt="Robi Harid" class="rounded-lg shadow-lg h-[500px] w-[510px] object-cover" />
       </div>
 
       <!-- Story Content -->
-      <div class="w-full lg:w-[600px] flex flex-col lg:pl-10 gap-[30px]">
-        <div v-motion-fade class="flex justify-start">
+      <div :delay="200" v-motion-fade-visible class="w-full lg:w-[600px] flex flex-col lg:pl-10 gap-[30px]">
+        <div class="flex justify-start">
           <div
             class="bg-[#100f17] text-white rounded-full w-12 h-12 lg:w-14 lg:h-14 flex items-center justify-center text-lg lg:text-xl font-bold border border-[#FFFFFF24]"
           >

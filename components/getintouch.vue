@@ -75,6 +75,8 @@ useHead({
 
       <!-- Contact Image -->
       <NuxtImg
+        v-motion-fade-visible
+        :delay="200"
         placeholder
         src="/robi-getin-touch.svg"
         alt="Robi Group"
