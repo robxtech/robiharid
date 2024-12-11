@@ -1,44 +1,72 @@
-<template>
-  <div class="bg-[#14151A] w-full px-4 md:px-8 lg:px-[120px] flex items-center justify-center">
-    <div class="w-full flex justify-center items-center max-w-[1200px]">
-      <div class="w-full text-gray-300 py-8 flex flex-col gap-8">
-        <div class="w-full flex flex-col lg:flex-row items-center justify-between gap-4">
-          <div class="max-w-full lg:max-w-md text-center lg:text-left">
-            <h2 class="text-lg md:text-xl font-semibold text-white mb-2">Subscribe to our newsletter</h2>
-            <p class="text-sm md:text-base">Get a summary of what we've shipped during the last month, behind the scenes updates, and team picks.</p>
-          </div>
+<script lang="ts" setup>
+import Button from "./ui/button.vue";
+import Input from "./ui/input.vue";
 
-          <div class="flex flex-col md:flex-row items-center gap-4 w-full lg:w-auto">
-            <div class="relative flex-1 w-full">
-              <Input size="medium" icon="email" placeholder="Enter Your Email" />
-            </div>
-            <Button variant="secondary" size="medium" type="submit" class="w-full md:w-auto"> Get Early Access </Button>
-          </div>
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
+
+useHead({
+  title: "Robi Harid",
+  meta: [
+    { name: "description", content: "Stay updated with our latest updates, monthly summaries, and team picks. Subscribe to our newsletter today." },
+    { name: "keywords", content: "newsletter, updates, monthly summaries, behind the scenes, team picks, Robi Harid" },
+    { name: "author", content: "Robi Harid" },
+    { property: "og:title", content: "Subscribe to Our Newsletter - Robi Harid" },
+    {
+      property: "og:description",
+      content: "Stay updated with our latest updates, monthly summaries, and team picks. Subscribe to our newsletter today.",
+    },
+    { property: "og:image", content: "/public/logo.svg" },
+    { property: "og:url", content: "https://robi-harid" },
+    { property: "og:type", content: "website" },
+    { name: "twitter:title", content: "Subscribe to Our Newsletter - Robi Harid" },
+    {
+      name: "twitter:description",
+      content: "Stay updated with our latest updates, monthly summaries, and team picks. Subscribe to our newsletter today.",
+    },
+    { name: "twitter:image", content: "/public/logo.svg" },
+  ],
+});
+</script>
+
+<template>
+  <div class="bg-[#14151A] w-full px-8 lg:px-[120px] flex items-center justify-center">
+    <div class="max-w-[1200px] w-full text-gray-300 py-8 flex flex-col gap-8">
+      <!-- Newsletter Header -->
+      <form
+        action="https://hooks.zapier.com/hooks/catch/your-zap-id/"
+        method="POST"
+        class="flex flex-col lg:flex-row items-center justify-between gap-4"
+      >
+        <div class="lg:max-w-md text-center lg:text-left">
+          <h2 class="text-[20px] md:text-xl font-[500] leading-[1.17] tracking-[-0.1px] text-white mb-2">Subscribe to our newsletter</h2>
+          <p class="text-sm md:text-base leading-[1.4] tracking-[-0.2px] text-[#FFFFFF99]">
+            Get a summary of what we've shipped during the last month, behind the scenes updates, and team picks.
+          </p>
         </div>
 
-        <div class="w-full flex flex-col md:flex-row items-center justify-between gap-4">
-          <div class="text-center md:text-left">
-            <p class="text-sm">© 2025 Robi Hadrid</p>
-          </div>
+        <div class="flex flex-col md:flex-row items-center gap-4 w-full lg:w-auto">
+          <Input name="email" size="medium" icon="email" placeholder="Enter Your Email" class="flex-1 w-full" required />
+          <Button variant="secondary" size="medium" type="submit" class="w-full md:w-auto"> Get Early Access </Button>
+        </div>
+      </form>
 
-          <div class="flex justify-center md:justify-center">
-            <img @click="scrollToTop" src="../public/logo.svg" alt="Logo" />
-          </div>
+      <!-- Footer Section -->
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+        <p class="text-sm text-[#FFFFFF99] leading-[1.43] tracking-[-0.1px] text-center md:text-left">© 2025 Robi Harid</p>
 
-          <div class="flex gap-4 justify-center md:justify-end">
+        <nuxt-img width="32" height="32" @click="scrollToTop" src="../public/logo.svg" alt="Logo" class="cursor-pointer" />
+
+        <div class="flex gap-4">
+          <a href="https://x.com/robiharid" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
             <nuxt-icon name="twitter" class="text-2xl" />
+          </a>
+          <a href="https://www.linkedin.com/in/robiharid/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
             <nuxt-icon name="linkedin" class="text-2xl" />
-          </div>
+          </a>
         </div>
       </div>
     </div>
   </div>
 </template>
-
-<script lang="ts" setup>
-import Button from "./ui/button.vue";
-import Input from "./ui/input.vue";
-const scrollToTop = () => {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-};
-</script>

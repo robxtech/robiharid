@@ -26,9 +26,9 @@ const props = withDefaults(defineProps<ButtonProps>(), {
 });
 
 const sizeClasses = {
-  small: "text-sm gap-1 px-3 py-1 rounded-lg	",
-  medium: "text-md gap-2 px-4 py-2 rounded-xl	",
-  large: "text-lg gap-2 px-5 py-3 rounded-xl	",
+  small: "text-sm gap-1 px-3 py-1 rounded-lg leading-[1.17] tracking-[-0.1px]	",
+  medium: "text-md gap-2 px-4 py-2 rounded-xl	 leading-[1.17] tracking-[-0.1px]",
+  large: "text-lg gap-2 px-5 py-3 rounded-xl	 leading-[1.17] tracking-[-0.1px]",
 };
 
 const variantClasses = {

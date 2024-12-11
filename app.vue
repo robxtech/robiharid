@@ -1,3 +1,9 @@
+<style>
+body {
+  font-family: "InterDisplay" !important;
+}
+</style>
+
 <template>
   <div class="bg-[#0B0C0E] w-full relative overflow-hidden mx-auto">
     <Header></Header>
@@ -26,9 +32,3 @@
     </div>
   </div>
 </template>
-
-<style>
-body {
-  font-family: "InterDisplay" !important;
-}
-</style>
