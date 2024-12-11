@@ -36,7 +36,7 @@ useHead({
         >
           #
         </div>
-        <h2 class="text-[32px] sm:text-[40px] md:text-[48px] font-semibold leading-[1.17] tracking-[-1px]">Get In Touch</h2>
+        <h2 class="text-[32px] sm:text-[40px] md:text-[48px] font-[500] leading-[1.17] tracking-[-1px]">Get In Touch</h2>
         <p class="text-gray-300 text-base md:text-lg leading-relaxed">
           To get in touch with Robi, learn more about RecruitMate AI or book keynote speaking events, please contact Robi through the form below.
         </p>

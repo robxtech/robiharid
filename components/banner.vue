@@ -52,7 +52,7 @@ useHead({
         <p class="text-[16px] md:text-[18px] font-normal text-gray-400 mb-4 leading-[1.4] tracking-[-0.2px]">
           Helping recruiters improve their candidate experience
         </p>
-        <h1 class="text-[30px] sm:text-[40px] md:text-[45px] font-medium leading-[1.17] tracking-[-0.1px] mb-6">
+        <h1 class="text-[30px] sm:text-[40px] md:text-[45px] font-[500] leading-[1.17] tracking-[-0.1px] mb-6">
           Entrepreneur, Founder,<br />Author & Tech Innovator
         </h1>
         <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
