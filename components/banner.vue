@@ -33,12 +33,12 @@ useHead({
     { property: "og:title", content: "Entrepreneur, Founder, Author & Tech Innovator" },
     { property: "og:description", content: "Helping recruiters improve their candidate experience. Explore projects and contact the creator." },
     { property: "og:image", content: "/public/robi-harid.svg" },
-    { property: "og:url", content: "https://robi-harid" },
+    { property: "og:url", content: "https://robi-harid.vercel.app" },
     { name: "twitter:title", content: "Entrepreneur, Founder, Author & Tech Innovator" },
     { name: "twitter:description", content: "Helping recruiters improve their candidate experience. Learn more about the projects and expertise." },
     { name: "twitter:image", content: "/public/robi-harid.svg" },
   ],
-  link: [{ rel: "canonical", href: "https://robi-harid" }],
+  link: [{ rel: "canonical", href: "https://robi-harid.vercel.app" }],
 });
 </script>
 

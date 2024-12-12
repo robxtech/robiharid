@@ -16,7 +16,7 @@ useHead({
     },
     { name: "keywords", content: "newsletter, updates, monthly summaries, behind the scenes, team picks, Robi Harid" },
     { name: "author", content: "Robi Harid" },
-    { property: "og:title", content: "Subscribe to Our Newsletter - Robi Harid" },
+    { property: "og:title", content: "Robi Harid" },
     {
       property: "og:description",
       content:
@@ -25,7 +25,7 @@ useHead({
     { property: "og:image", content: "/public/logo.svg" },
     { property: "og:url", content: "https://robi-harid.vercel.app" },
     { property: "og:type", content: "website" },
-    { name: "twitter:title", content: "Subscribe to Our Newsletter - Robi Harid" },
+    { name: "twitter:title", content: "Robi Harid" },
     {
       name: "twitter:description",
       content:
