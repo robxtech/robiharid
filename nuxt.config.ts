@@ -1,4 +1,3 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
   devtools: { enabled: true },
@@ -9,8 +8,10 @@ export default defineNuxtConfig({
       title: "Robi Harid",
       meta: [
         {
-          name: "Robi Harid",
-          content: "Robi Harid",
+          hid: "description",
+          name: "description",
+          content:
+            "Robi Harid is an accomplished entrepreneur with over 10 years experience leading projects for global brands including TOSHIBA and HSBC.",
         },
       ],
     },

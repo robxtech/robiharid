@@ -14,7 +14,7 @@ useHead({
       content:
         "Robi Harid is an accomplished entrepreneur with over 10 years' experience leading projects for global brands including TOSHIBA and HSBC.",
     },
-    { name: "keywords", content: "newsletter, updates, monthly summaries, behind the scenes, team picks, Robi Harid" },
+    { name: "keywords", content: "TOSHIBA, HSCB , Robi Harid,entrepreneur,leading projects" },
     { name: "author", content: "Robi Harid" },
     { property: "og:title", content: "Robi Harid" },
     {
