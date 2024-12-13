@@ -46,6 +46,8 @@ useHead({
   <div class="w-full flex flex-col items-center px-8 lg:px-[120px]">
     <!-- Hero Section -->
     <section
+      v-motion-fade
+      :delay="200"
       class="w-full flex flex-col lg:flex-row justify-between items-center text-white bg-[#14151a] h-auto lg:h-[450px] rounded-[24px] p-6 md:p-10 my-6 md:my-[91px] shadow-lg max-w-[1200px]"
     >
       <div class="flex-1 text-center lg:text-left">
