@@ -1,39 +1,14 @@
 <script lang="ts" setup>
 import Button from "./ui/button.vue";
 import Input from "./ui/input.vue";
+import { toast } from "vue-sonner";
 
 const scrollToTop = () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 };
-
-useHead({
-  title: "Robi Harid",
-  meta: [
-    {
-      name: "description",
-      content:
-        "Robi Harid is an accomplished entrepreneur with over 10 years' experience leading projects for global brands including TOSHIBA and HSBC.",
-    },
-    { name: "keywords", content: "TOSHIBA, HSCB , Robi Harid,entrepreneur,leading projects" },
-    { name: "author", content: "Robi Harid" },
-    { property: "og:title", content: "Robi Harid" },
-    {
-      property: "og:description",
-      content:
-        "Robi Harid is an accomplished entrepreneur with over 10 years' experience leading projects for global brands including TOSHIBA and HSBC.",
-    },
-    { property: "og:image", content: "/public/logo.svg" },
-    { property: "og:url", content: "https://robi-harid.vercel.app" },
-    { property: "og:type", content: "website" },
-    { name: "twitter:title", content: "Robi Harid" },
-    {
-      name: "twitter:description",
-      content:
-        "Robi Harid is an accomplished entrepreneur with over 10 years' experience leading projects for global brands including TOSHIBA and HSBC.",
-    },
-    { name: "twitter:image", content: "/public/logo.svg" },
-  ],
-});
+const handleSubmit = (event: Event) => {
+  toast.success("Success! sending you a message");
+};
 </script>
 
 <template>
@@ -41,9 +16,10 @@ useHead({
     <div class="max-w-[1200px] w-full text-gray-300 py-8 flex flex-col gap-8">
       <!-- Newsletter Header -->
       <form
-        action="https://hooks.zapier.com/hooks/catch/your-zap-id/"
+        action="https://forms.hubspot.com/uploads/form/v2/48040344/c30c8d9d-ab0d-4f80-9b29-77d5e6195394"
         method="POST"
         class="flex flex-col lg:flex-row items-center justify-between gap-4"
+        @submit="handleSubmit"
       >
         <div class="lg:max-w-md text-center lg:text-left">
           <h2 class="text-[20px] md:text-xl font-[500] leading-[1.17] tracking-[-0.1px] text-white mb-2">Subscribe to our newsletter</h2>

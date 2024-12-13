@@ -1,29 +1,12 @@
 <script lang="ts" setup>
+import { ref } from "vue";
 import Button from "./ui/button.vue";
 import Input from "./ui/input.vue";
+import { toast } from "vue-sonner"; // Toast library import
 
-useHead({
-  title: "Get In Touch - Contact Robi | RecruitMate AI",
-  meta: [
-    {
-      name: "description",
-      content: "Contact Robi to learn more about RecruitMate AI, book keynote speaking events, or get in touch through the form.",
-    },
-    { name: "keywords", content: "Contact Robi, RecruitMate AI, keynote speaking, AI contact form, Robi Group" },
-    { name: "author", content: "Robi Group" },
-    { property: "og:title", content: "Get In Touch - Contact Robi | RecruitMate AI" },
-    {
-      property: "og:description",
-      content: "Reach out to Robi to learn more about RecruitMate AI or book keynote events. Use our contact form for direct communication.",
-    },
-    { property: "og:image", content: "/robi-getin-touch.svg" },
-    { property: "og:url", content: "https://robi-harid.vercel.app" },
-    { property: "og:type", content: "website" },
-    { name: "twitter:title", content: "Get In Touch - Contact Robi | RecruitMate AI" },
-    { name: "twitter:description", content: "Learn more about RecruitMate AI or connect with Robi through our contact form." },
-    { name: "twitter:image", content: "/robi-getin-touch.svg" },
-  ],
-});
+const handleSubmit = (event: Event) => {
+  toast.success("Success! sending you a message");
+};
 </script>
 
 <template>
@@ -42,7 +25,12 @@ useHead({
         </p>
 
         <!-- Contact Form  -->
-        <form class="space-y-4 w-full" action="https://hooks.zapier.com/hooks/catch/your-zap-id/" method="POST">
+        <form
+          class="space-y-4 w-full"
+          action="https://forms.hubspot.com/uploads/form/v2/48040344/7228c492-78f9-414e-a077-a85ea033dbe8"
+          method="POST"
+          @submit="handleSubmit"
+        >
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-7">
             <Input name="email" placeholder="example@example.com" type="email" label="Email" size="medium" required />
             <Input name="name" placeholder="John Doe" type="text" label="Name" size="medium" required />

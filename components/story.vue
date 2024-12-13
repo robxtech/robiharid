@@ -1,28 +1,3 @@
-<script lang="ts" setup>
-useHead({
-  title: "My Story - Robi Harid | RecruitMate AI Founder",
-  meta: [
-    {
-      name: "description",
-      content: "Learn about Robi Harid's journey as a technology leader and founder of RecruitMate AI, revolutionizing the recruitment industry.",
-    },
-    { name: "keywords", content: "Robi Harid, RecruitMate AI, technology leader, recruitment platform, innovation, global brands" },
-    { name: "author", content: "Robi Harid" },
-    { property: "og:title", content: "My Story - Robi Harid | RecruitMate AI Founder" },
-    {
-      property: "og:description",
-      content: "Discover Robi Harid's journey, leading innovative projects and founding RecruitMate AI to transform recruitment processes.",
-    },
-    { property: "og:image", content: "/public/robi-harid-story-image.svg" },
-    { property: "og:url", content: "https://robi-harid.vercel.app" },
-    { property: "og:type", content: "website" },
-    { name: "twitter:title", content: "My Story - Robi Harid | RecruitMate AI Founder" },
-    { name: "twitter:description", content: "Learn about Robi Harid's journey as a technology leader and founder of RecruitMate AI." },
-    { name: "twitter:image", content: "/public/robi-harid-story-image.svg" },
-  ],
-});
-</script>
-
 <template>
   <div class="flex w-full justify-center items-center py-[80px] px-8 lg:px-[120px]">
     <div class="max-w-[1200px] w-full flex flex-col lg:flex-row items-start gap-6 lg:gap-12 py-10 lg:py-20">

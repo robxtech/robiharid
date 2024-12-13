@@ -7,40 +7,6 @@ const scrollToSection = (id: string) => {
   const section = document.getElementById(id);
   if (section) section.scrollIntoView({ behavior: "smooth" });
 };
-
-// Image data
-const images = ref([
-  { src: "/toshiba.svg", alt: "TOSHIBA Logo" },
-  { src: "/crh.svg", alt: "CRH Logo" },
-  { src: "/ey.svg", alt: "EY Logo" },
-  { src: "/formula1.svg", alt: "Formula1 Logo" },
-  { src: "/hsbc.svg", alt: "HSCB Logo" },
-  { src: "/ikea.svg", alt: "IKEA Logo" },
-  { src: "/mercer.svg", alt: "Mercer Logo" },
-  { src: "/voxie.svg", alt: "Voxie Logo" },
-]);
-
-// SEO metadata
-useHead({
-  title: "Robi Harid",
-  meta: [
-    {
-      name: "description",
-      content:
-        "Helping recruiters improve their candidate experience. Discover the work of a leading entrepreneur, founder, author, and tech innovator.",
-    },
-    { name: "keywords", content: "Entrepreneur, Founder, Author, Tech Innovator, Candidate Experience, Tech Leadership" },
-    { name: "author", content: "Robi Harid" },
-    { property: "og:title", content: "Entrepreneur, Founder, Author & Tech Innovator" },
-    { property: "og:description", content: "Helping recruiters improve their candidate experience. Explore projects and contact the creator." },
-    { property: "og:image", content: "/public/robi-harid.svg" },
-    { property: "og:url", content: "https://robi-harid.vercel.app" },
-    { name: "twitter:title", content: "Entrepreneur, Founder, Author & Tech Innovator" },
-    { name: "twitter:description", content: "Helping recruiters improve their candidate experience. Learn more about the projects and expertise." },
-    { name: "twitter:image", content: "/public/robi-harid.svg" },
-  ],
-  link: [{ rel: "canonical", href: "https://robi-harid.vercel.app" }],
-});
 </script>
 
 <template>
@@ -78,10 +44,10 @@ useHead({
     <!-- Marquee Section -->
     <section class="lg:w-[65%] w-full" :delay="200" v-motion-fade-visible>
       <Vue3Marquee :gradient="true" :gradient-color="[11, 11, 11]" gradient-length="30%">
-        <div class="flex mt-10 md:mt-0">
+        <div class="flex mt-10 md:mt-0 items-center">
           <NuxtImg placeholder src="/toshiba.svg" alt="TOSHIBA Logo" width="100" height="100" class="mx-6" />
-          <NuxtImg placeholder src="/crh.svg" alt="CRH Logo" width="50" height="50" class="mx-6" />
-          <NuxtImg placeholder src="/ey.svg" alt="EY Logo" width="50" height="50" class="mx-6" />
+          <NuxtImg placeholder src="/crh.svg" alt="CRH Logo" width="45" height="45" class="mx-6" />
+          <NuxtImg placeholder src="/ey.svg" alt="EY Logo" width="45" height="45" class="mx-6" />
           <NuxtImg placeholder src="/formula1.svg" alt="Formula1 Logo" width="100" height="100" class="mx-6" />
           <NuxtImg placeholder src="/hsbc.svg" alt="HSCB Logo" width="100" height="100" class="mx-6" />
           <NuxtImg placeholder src="/ikea.svg" alt="IKEA Logo" width="100" height="100" class="mx-6" />

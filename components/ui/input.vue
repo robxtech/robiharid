@@ -1,12 +1,13 @@
 <template>
   <label>
     <span :class="labelClass" v-if="label">{{ label }}</span>
-    <input :type="type" :placeholder="placeholder" :class="classes" :disabled="disabled" />
+    <input :required="required" v-model="model" :type="type" :placeholder="placeholder" :class="classes" :disabled="disabled" />
   </label>
 </template>
 
 <script setup lang="ts">
 import { computed } from "vue";
+const model = defineModel<string>();
 
 interface InputProps {
   type?: string;
@@ -15,6 +16,7 @@ interface InputProps {
   disabled?: boolean;
   size?: "small" | "medium" | "large";
   icon?: string;
+  required?: boolean;
 }
 
 const props = withDefaults(defineProps<InputProps>(), {
@@ -23,6 +25,7 @@ const props = withDefaults(defineProps<InputProps>(), {
   label: "",
   disabled: false,
   size: "medium",
+  required: false,
 });
 
 const sizeClasses = {

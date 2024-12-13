@@ -26,27 +26,6 @@ const testimonials = [
     company: "Mailchimp",
   },
 ];
-
-// Page Metadata
-useHead({
-  title: "Explore Testimonials | Robi Harid",
-  meta: [
-    { name: "description", content: "Discover the impact of my projects through testimonials from industry leaders like Elon Musk and Jane Doe." },
-    { name: "keywords", content: "Robi Harid, projects, testimonials, innovative solutions, client feedback" },
-    { name: "author", content: "Robi Harid" },
-    { property: "og:title", content: "My Projects - Explore Testimonials | Robi Harid" },
-    { property: "og:description", content: "Explore testimonials from leaders like Elon Musk, showcasing the impact of Robi Harid's projects." },
-    { property: "og:image", content: "/framer.svg" },
-    { property: "og:url", content: "https://robi-harid.vercel.app" },
-    { property: "og:type", content: "website" },
-    { name: "twitter:title", content: "My Projects - Explore Testimonials | Robi Harid" },
-    {
-      name: "twitter:description",
-      content: "Discover testimonials from industry leaders like Elon Musk, showcasing Robi Harid's innovative solutions.",
-    },
-    { name: "twitter:image", content: "/framer.svg" },
-  ],
-});
 </script>
 
 <template>
