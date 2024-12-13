@@ -10,13 +10,14 @@ const scrollToSection = (id: string) => {
 
 // Image data
 const images = ref([
-  { src: "/framer.svg", alt: "Framer Logo" },
-  { src: "/google.svg", alt: "Google Logo" },
-  { src: "/airbnb.svg", alt: "Airbnb Logo" },
-  { src: "/figma.svg", alt: "Figma Logo" },
-  { src: "/discord.svg", alt: "Discord Logo" },
-  { src: "/dropbox.svg", alt: "Dropbox Logo" },
-  { src: "/mailchimp.svg", alt: "MailChimp Logo" },
+  { src: "/toshiba.svg", alt: "TOSHIBA Logo" },
+  { src: "/crh.svg", alt: "CRH Logo" },
+  { src: "/ey.svg", alt: "EY Logo" },
+  { src: "/formula1.svg", alt: "Formula1 Logo" },
+  { src: "/hsbc.svg", alt: "HSCB Logo" },
+  { src: "/ikea.svg", alt: "IKEA Logo" },
+  { src: "/mercer.svg", alt: "Mercer Logo" },
+  { src: "/voxie.svg", alt: "Voxie Logo" },
 ]);
 
 // SEO metadata
@@ -78,16 +79,14 @@ useHead({
     <section class="lg:w-[65%] w-full" :delay="200" v-motion-fade-visible>
       <Vue3Marquee :gradient="true" :gradient-color="[11, 11, 11]" gradient-length="30%">
         <div class="flex mt-10 md:mt-0">
-          <NuxtImg
-            placeholder
-            v-for="(image, index) in images"
-            :key="index"
-            :src="image.src"
-            :alt="image.alt"
-            width="120"
-            height="120"
-            class="mx-6"
-          />
+          <NuxtImg placeholder src="/toshiba.svg" alt="TOSHIBA Logo" width="100" height="100" class="mx-6" />
+          <NuxtImg placeholder src="/crh.svg" alt="CRH Logo" width="50" height="50" class="mx-6" />
+          <NuxtImg placeholder src="/ey.svg" alt="EY Logo" width="50" height="50" class="mx-6" />
+          <NuxtImg placeholder src="/formula1.svg" alt="Formula1 Logo" width="100" height="100" class="mx-6" />
+          <NuxtImg placeholder src="/hsbc.svg" alt="HSCB Logo" width="100" height="100" class="mx-6" />
+          <NuxtImg placeholder src="/ikea.svg" alt="IKEA Logo" width="100" height="100" class="mx-6" />
+          <NuxtImg placeholder src="/mercer.svg" alt="Mercer Logo" width="100" height="100" class="mx-6" />
+          <NuxtImg placeholder src="/voxie.svg" alt="Voixe Logo" width="100" height="100" class="mx-6" />
         </div>
       </Vue3Marquee>
     </section>
