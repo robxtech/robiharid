@@ -9,6 +9,7 @@ const scrollToTop = () => {
 const handleSubmit = (event: Event) => {
   toast.success("Success! sending you a message");
 };
+const currentYear = new Date().getFullYear();
 </script>
 
 <template>
@@ -36,7 +37,7 @@ const handleSubmit = (event: Event) => {
 
       <!-- Footer Section -->
       <div class="flex flex-col md:flex-row items-center justify-between gap-4">
-        <p class="text-sm text-[#FFFFFF99] leading-[1.43] tracking-[-0.1px] text-center md:text-left">© 2025 Robi Harid</p>
+        <p class="text-sm text-[#FFFFFF99] leading-[1.43] tracking-[-0.1px] text-center md:text-left">© {{ currentYear }} Robi Harid</p>
 
         <NuxtImg placeholder width="32" height="32" @click="scrollToTop" src="/logo.svg" alt="Logo" class="cursor-pointer" />
 
