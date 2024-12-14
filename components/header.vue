@@ -6,12 +6,6 @@ const scrollToContact = () => {
     footer.scrollIntoView({ behavior: "smooth" });
   }
 };
-const scrollToMyProject = () => {
-  const footer = document.getElementById("my-project");
-  if (footer) {
-    footer.scrollIntoView({ behavior: "smooth" });
-  }
-};
 </script>
 
 <template>
@@ -19,8 +13,7 @@ const scrollToMyProject = () => {
     <div class="w-full flex flex-row justify-between items-center py-6 gap-4 max-w-[1200px]">
       <NuxtImg placeholder src="/logo.svg" alt="Logo" width="32" height="32" />
       <div class="flex flex-row gap-4">
-        <Button class="z-[4000]" @click="scrollToContact" variant="text" size="small">Contact with me</Button>
-        <Button class="z-[4000]" @click="scrollToMyProject" variant="primary" size="small">My Project</Button>
+        <Button class="z-[4000]" @click="scrollToContact" variant="primary" size="small">Get In Touch</Button>
       </div>
     </div>
   </div>

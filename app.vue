@@ -32,9 +32,9 @@ import { Toaster } from "vue-sonner";
       class="z-[1] w-[20.5rem] h-[30.5rem] absolute top-[80rem] right-[95.9375rem] bg-[rgba(240,145,255,0.60)] shadow-[0_4px_20px_rgba(0,0,0,0.7)] blur-[1000px] rounded-[30.5rem] rounded-[30.5rem]"
     ></div>
 
-    <div class="bg-[#14151A] w-full flex items-center justify-center">
+    <!-- <div class="bg-[#14151A] w-full flex items-center justify-center">
       <Testimonial></Testimonial>
-    </div>
+    </div> -->
 
     <Getintouch></Getintouch>
     <div class="w-full">
