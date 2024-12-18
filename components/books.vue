@@ -1,10 +1,23 @@
+<script lang="ts" setup>
+import Button from "./ui/button.vue";
+</script>
 <template>
   <div class="flex w-full justify-center items-center py-[80px] px-8 lg:px-[120px]">
     <div class="max-w-[1200px] w-full flex flex-col justify-between xl:flex-row items-center gap-6 lg:gap-12 py-10 lg:py-20">
       <!-- Story Image -->
-      <div v-motion-fade-visible :delay="200" class="flex justify-center w-full rounded-[25px] sm:w-[435px] xl:w-[435px]">
-        <NuxtImg placeholder src="/books.svg" alt="Robi Harid" class="h-[600px] w-auto rounded-[25px] xl:object-cover" />
-      </div>
+
+      <a
+        href="https://books.google.com.vn/books?id=8hozEQAAQBAJ&pg=PA3&dq=hiring:+candidate+experience+made+easy&hl=en&newbks=1&newbks_redir=0&source=gb_mobile_search&sa=X&ved=2ahUKEwj6-ra18ayKAxUHh1YBHSIbDVkQ6AF6BAgLEAM#v=onepage&q=hiring%3A%20candidate%20experience%20made%20easy&f=false"
+        target="_blank"
+      >
+        <div
+          v-motion-fade-visible
+          :delay="200"
+          class="flex justify-center w-full rounded-[25px] sm:w-[435px] xl:w-[435px] justify-center w-full lg:w-auto"
+        >
+          <NuxtImg placeholder src="/books.svg" alt="Robi Harid" class="h-[600px] w-auto rounded-[25px] xl:object-cover" />
+        </div>
+      </a>
 
       <!-- Books Content -->
       <div v-motion-fade-visible :delay="200" class="w-full lg:w-[600px] flex flex-col gap-6">
@@ -19,9 +32,15 @@
           Hiring: Candidate Experience Made Easy
         </h2>
 
+        <a
+          href="https://books.google.com.vn/books?id=8hozEQAAQBAJ&pg=PA3&dq=hiring:+candidate+experience+made+easy&hl=en&newbks=1&newbks_redir=0&source=gb_mobile_search&sa=X&ved=2ahUKEwj6-ra18ayKAxUHh1YBHSIbDVkQ6AF6BAgLEAM#v=onepage&q=hiring%3A%20candidate%20experience%20made%20easy&f=false"
+          target="_blank "
+        >
+          <Button class="z-[4000] w-full md:w-auto" variant="secondary">View Now </Button>
+        </a>
         <!-- Paragraphs -->
         <div>
-          <div class="text-[#908e9b] flex flex-col gap-4 mb-4 text-lg leading-7 tracking-[1px] xl:max-w-[470px]">
+          <div class="text-[#908e9b] flex flex-col gap-4 mb-4 tleading-7 mb-4 text-base md:text-lg xl:max-w-[470px]">
             <p>
               After speaking with hundreds of recruiters, I’ve compiled everything I’ve learned into a book designed to help recruiters enhance the
               candidate experience and build lasting relationships.
@@ -40,7 +59,7 @@
           <p class="leading-7 mb-2 text-base md:text-lg w-full xl:max-w-[470px]">
             <span class="font-bold text-[#908e9b]">Robi Harid</span>
           </p>
-          <p class="text-[#908e9b] text-base md:text-lg leading-8 w-full lg:auto font-bold">CEO at RobX Tech</p>
+          <p class="text-[#908e9b] text-base md:text-lg leading-8 w-full lg:auto font-bold">Director at RobX Technologies</p>
         </div>
       </div>
     </div>

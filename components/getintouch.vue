@@ -13,7 +13,7 @@ const handleSubmit = (event: Event) => {
   <div id="contact" class="bg-[#0b0c0e] w-full py-[80px] px-8 lg:px-[120px] flex items-center justify-center">
     <div class="max-w-[1200px] w-full flex flex-col lg:flex-row items-end justify-between gap-8 text-white rounded-xl my-10 lg:my-16">
       <!-- Contact Information -->
-      <div class="flex-1 flex flex-col gap-8">
+      <div v-motion-slide-visible-left :delay="200" class="flex-1 flex flex-col gap-8">
         <div
           class="bg-[#100f17] text-white rounded-full w-12 h-12 lg:w-14 lg:h-14 flex items-center justify-center text-lg lg:text-xl font-bold border border-[#FFFFFF24]"
         >
@@ -66,11 +66,11 @@ const handleSubmit = (event: Event) => {
         v-motion-fade-visible
         :delay="200"
         placeholder
-        src="/robi-getin-touch.svg"
+        src="/test.png"
         alt="Robi Group"
         quality="85"
         format="webp"
-        class="rounded-lg w-full max-w-[300px] lg:max-w-[24rem] xl:max-w-[28rem] object-cover shadow-lg hidden lg:flex mb-16"
+        class="rounded-[25px] w-full max-w-[300px] lg:max-w-[20rem] xl:max-w-[22rem] max-h-[600px] object-cover shadow-lg hidden lg:flex mb-16"
       />
     </div>
   </div>
