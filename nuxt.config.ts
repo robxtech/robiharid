@@ -48,10 +48,7 @@ export default defineNuxtConfig({
         },
         { name: "twitter:image", content: "/public/robi-harid-main.svg" },
       ],
-      link: [
-        { rel: "canonical", href: "https://robi-harid.vercel.app" },
-        { rel: "icon", type: "image/x-icon", href: "/public/favicon.ico" },
-      ],
+      link: [{ rel: "canonical", href: "https://robi-harid.vercel.app" }],
     },
   },
 });
