@@ -50,6 +50,7 @@ export default defineNuxtConfig({
       ],
       link: [
         { rel: "canonical", href: "https://robi-harid.vercel.app" },
+        { rel: "icon", type: "image/x-icon", href: "/public/favicon.ico" },
         { rel: "icon", type: "image/png", sizes: "32x32", href: "/public/favicon-32x32.png" },
         { rel: "icon", type: "image/png", sizes: "16x16", href: "/public/favicon-16x16.png" },
         { rel: "apple-touch-icon", sizes: "180x180", href: "/public/apple-touch-icon.png" },
