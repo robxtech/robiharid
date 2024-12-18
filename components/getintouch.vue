@@ -66,7 +66,7 @@ const handleSubmit = (event: Event) => {
         v-motion-fade-visible
         :delay="200"
         placeholder
-        src="/test.png"
+        src="/robi-harid-getin-touch.png"
         alt="Robi Group"
         quality="85"
         format="webp"
