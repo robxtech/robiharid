@@ -28,8 +28,8 @@ const scrollToSection = (id: string) => {
           <Button @click="() => scrollToSection('contact')" class="z-[4000]" variant="secondary">
             <div class="flex justify-center items-center gap-1"><nuxt-icon name="flash" /> Get In Touch</div>
           </Button>
-          <a href="https://www.recruitmateai.com" target="_blank">
-            <Button class="z-[4000]" variant="outlined">My Projects</Button>
+          <a href="https://www.recruitmateai.com" target="_blank ">
+            <Button class="z-[4000] w-full" variant="outlined">My Projects</Button>
           </a>
         </div>
       </div>
@@ -44,7 +44,7 @@ const scrollToSection = (id: string) => {
     </section>
 
     <!-- Marquee Section -->
-    <section class="lg:w-[65%] w-full" :delay="200" v-motion-fade-visible>
+    <section class="lg:w-[65%] w-full" v-motion-fade-visible :delay="200">
       <Vue3Marquee :gradient="true" :gradient-color="[11, 11, 11]" gradient-length="30%">
         <div class="flex mt-10 md:mt-0 items-center">
           <NuxtImg placeholder src="/toshiba.svg" alt="TOSHIBA Logo" width="100" height="100" class="mx-6" />

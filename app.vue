@@ -5,6 +5,7 @@ body {
 </style>
 <script lang="ts" setup>
 import { Toaster } from "vue-sonner";
+import Books from "./components/books.vue";
 </script>
 
 <template>
@@ -35,6 +36,10 @@ import { Toaster } from "vue-sonner";
     <!-- <div class="bg-[#14151A] w-full flex items-center justify-center">
       <Testimonial></Testimonial>
     </div> -->
+
+    <div class="bg-[#14151A] w-full flex items-center justify-center">
+      <Books></Books>
+    </div>
 
     <Getintouch></Getintouch>
     <div class="w-full">

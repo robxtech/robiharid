@@ -7,6 +7,10 @@ export default defineNuxtConfig({
     head: {
       title: "Robi Harid",
       meta: [
+        { charset: "utf-8" },
+        { name: "viewport", content: "width=device-width, initial-scale=1" },
+        { name: "msapplication-TileColor", content: "#2d89ef" },
+        { name: "theme-color", content: "#ffffff" },
         {
           name: "description",
           content:
@@ -35,7 +39,14 @@ export default defineNuxtConfig({
         },
         { name: "twitter:image", content: "/public/robi-harid-main.svg" },
       ],
-      link: [{ rel: "canonical", href: "https://robi-harid.vercel.app" }],
+      link: [
+        { rel: "canonical", href: "https://robi-harid.vercel.app" },
+        { rel: "icon", type: "image/png", sizes: "32x32", href: "/public/favicon-32x32.png" },
+        { rel: "icon", type: "image/png", sizes: "16x16", href: "/public/favicon-16x16.png" },
+        { rel: "apple-touch-icon", sizes: "180x180", href: "/public/apple-touch-icon.png" },
+        { rel: "manifest", href: "/public/site.webmanifest" },
+        { rel: "mask-icon", href: "/public/safari-pinned-tab.svg", color: "#5bbad5" },
+      ],
     },
   },
 });

@@ -7,7 +7,7 @@
       </div>
 
       <!-- Story Content -->
-      <div :delay="200" v-motion-fade-visible class="w-full lg:w-[600px] flex flex-col lg:pl-10 gap-[30px]">
+      <div v-motion-fade-visible :delay="200" class="w-full lg:w-[600px] flex flex-col lg:pl-10 gap-[30px]">
         <div class="flex justify-start">
           <div
             class="bg-[#100f17] text-white rounded-full w-12 h-12 lg:w-14 lg:h-14 flex items-center justify-center text-lg lg:text-xl font-bold border border-[#FFFFFF24]"
@@ -25,7 +25,7 @@
           <span class="font-bold">TOSHIBA, HSBC, EY, IKEA,</span> and <span class="font-bold">Formula 1</span>. I quickly recognised the
           transformative power of technology to enhance customer experiences and drive organisational efficiency.
         </p>
-        <p class="text-[#908e9b] text-base md:text-lg leading-8 w-full lg:max-w-[470px]">
+        <p class="text-[#908e9b] text-base md:text-lg leading-7 w-full lg:max-w-[470px]">
           Building on this expertise, I founded <span class="font-bold">RecruitMate AI</span>, an all-in-one platform designed to make recruiters'
           jobs easier. RecruitMate AI empowers recruiters to streamline candidate communications, saving them hours every day – all while delivering
           an industry-leading candidate experience.
