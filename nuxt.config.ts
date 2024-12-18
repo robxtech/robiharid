@@ -1,7 +1,16 @@
 export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
   devtools: { enabled: true },
-  modules: ["@nuxtjs/tailwindcss", "nuxt-icons", "@nuxt/fonts", "@vueuse/motion/nuxt", "@nuxt/image", "@nuxt/scripts"],
+  ssr: false,
+  modules: [
+    "@nuxtjs/tailwindcss",
+    "nuxt-icons",
+    "@nuxt/fonts",
+    "@vueuse/motion/nuxt",
+    "@nuxt/image",
+    "@nuxt/scripts",
+    // "@nuxthub/core"
+  ],
   css: ["~/assets/fonts/inter.css"],
   app: {
     head: {
@@ -46,6 +55,7 @@ export default defineNuxtConfig({
         { rel: "apple-touch-icon", sizes: "180x180", href: "/public/apple-touch-icon.png" },
         { rel: "manifest", href: "/public/site.webmanifest" },
         { rel: "mask-icon", href: "/public/safari-pinned-tab.svg", color: "#5bbad5" },
+        { rel: "icon", type: "image/x-icon", href: "/public/favicon.ico" },
       ],
     },
   },
