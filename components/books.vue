@@ -2,7 +2,7 @@
 import Button from "./ui/button.vue";
 </script>
 <template>
-  <div class="flex w-full justify-center items-center py-[80px] px-8 lg:px-[120px]">
+  <div class="flex w-full justify-center items-center py-[40px] lg:py-[80px] px-8 lg:px-[120px]">
     <div class="max-w-[1200px] w-full flex flex-col justify-between xl:flex-row items-center gap-6 lg:gap-12 py-10 lg:py-20">
       <!-- Story Image -->
 
@@ -15,7 +15,7 @@ import Button from "./ui/button.vue";
           :delay="200"
           class="flex justify-center w-full rounded-[25px] sm:w-[435px] xl:w-[435px] justify-center w-full lg:w-auto"
         >
-          <NuxtImg placeholder src="/books.svg" alt="Robi Harid" class="h-[600px] w-auto rounded-[25px] xl:object-cover" />
+          <NuxtImg placeholder src="/books.svg" alt="Robi Harid" class="lg:h-[600px] h-[450px] w-auto rounded-[25px] xl:object-cover" />
         </div>
       </a>
 
