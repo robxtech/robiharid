@@ -25,11 +25,11 @@ const scrollToSection = (id: string) => {
           Entrepreneur, Founder,<br />Author & Tech Innovator
         </h1>
         <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-          <Button @click="() => scrollToSection('contact')" class="z-[4000]" variant="secondary">
+          <Button @click="() => scrollToSection('contact')" variant="secondary">
             <div class="flex justify-center items-center gap-1"><nuxt-icon name="flash" /> Get In Touch</div>
           </Button>
           <a href="https://www.recruitmateai.com" target="_blank ">
-            <Button class="z-[4000] w-full" variant="outlined">My Projects</Button>
+            <Button class="w-full" variant="outlined">My Projects</Button>
           </a>
         </div>
       </div>
