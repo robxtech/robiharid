@@ -51,7 +51,7 @@ const handleSubmit = (event: Event) => {
             variant="secondary"
             size="medium"
             type="submit"
-            class="flex items-center gap-2 bg-white text-black py-3 px-6 rounded-md hover:bg-gray-100 transition float-right"
+            class="flex items-center justify-center gap-2 bg-white text-black py-3 px-6 rounded-md hover:bg-gray-100 transition float-right w-full md:w-auto"
           >
             <div class="flex justify-center items-center gap-2">
               Send Your Message
