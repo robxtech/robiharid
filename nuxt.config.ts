@@ -26,7 +26,7 @@ export default defineNuxtConfig({
             "Robi Harid is an accomplished entrepreneur with over 10 years' experience leading projects for global brands including TOSHIBA and HSBC.",
         },
         { property: "og:image", content: "/public/robi-harid-main.svg" },
-        { property: "og:url", content: "https://robiharid.nuxt.dev" },
+        { property: "og:url", content: "https://www.robiharid.co.uk" },
         { property: "og:type", content: "website" },
         { name: "twitter:title", content: "Robi Harid" },
         {
@@ -37,7 +37,7 @@ export default defineNuxtConfig({
         { name: "twitter:image", content: "/public/robi-harid-main.svg" },
       ],
       link: [
-        { rel: "canonical", href: "https://robiharid.nuxt.dev" },
+        { rel: "canonical", href: "https://www.robiharid.co.uk" },
         { rel: "icon", type: "image/png", href: "/favicon-96x96.png", sizes: "96x96" },
         { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
         { rel: "shortcut icon", href: "/favicon.ico" },
