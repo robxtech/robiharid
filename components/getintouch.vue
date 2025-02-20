@@ -5,7 +5,7 @@ import Input from "./ui/input.vue";
 import { toast } from "vue-sonner"; // Toast library import
 
 const handleSubmit = (event: Event) => {
-  toast.success("Success! sending you a message");
+  toast.success("Message sent!");
 };
 </script>
 
