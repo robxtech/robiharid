@@ -32,7 +32,7 @@ const handleSubmit = (event: Event) => {
           @submit="handleSubmit"
         >
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-7">
-            <Input name="contact_email" placeholder="example@example.com" type="email" label="Email" size="medium" required />
+            <Input name="email" placeholder="example@example.com" type="email" label="Email" size="medium" required />
             <Input name="firstname" placeholder="John Doe" type="text" label="Name" size="medium" required />
           </div>
           <div>
