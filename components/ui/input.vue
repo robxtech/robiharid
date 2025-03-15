@@ -1,7 +1,7 @@
 <template>
   <label>
     <span :class="labelClass" v-if="label">{{ label }}</span>
-    <input :required="required" v-model="model" :type="type" :placeholder="placeholder" :class="classes" :disabled="disabled" />
+    <input :required="required" v-model="model" :type="type" :placeholder="placeholder" :class="classes" :disabled="disabled" :name="name" />
   </label>
 </template>
 
@@ -17,6 +17,7 @@ interface InputProps {
   size?: "small" | "medium" | "large";
   icon?: string;
   required?: boolean;
+  name?: string;
 }
 
 const props = withDefaults(defineProps<InputProps>(), {
@@ -26,6 +27,7 @@ const props = withDefaults(defineProps<InputProps>(), {
   disabled: false,
   size: "medium",
   required: false,
+  name: "",
 });
 
 const sizeClasses = {
