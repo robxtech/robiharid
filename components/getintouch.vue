@@ -2,7 +2,6 @@
 import { ref } from "vue";
 import Button from "./ui/button.vue";
 import Input from "./ui/input.vue";
-import { toast } from "vue-sonner";
 
 const formData = ref({
   email: "",
@@ -13,7 +12,12 @@ const formData = ref({
 const handleSubmit = (event: Event) => {
   event.preventDefault();
 
-  toast.success("Message sent!");
+  const subject = encodeURIComponent(`Message from ${formData.value.firstname}`);
+  const body = encodeURIComponent(
+    `Name: ${formData.value.firstname}\nEmail: ${formData.value.email}\n\nMessage:\n${formData.value.message}`
+  );
+
+  window.location.href = `mailto:robi@robiharid.com?subject=${subject}&body=${body}`;
 
   formData.value.email = "";
   formData.value.firstname = "";
@@ -39,8 +43,6 @@ const handleSubmit = (event: Event) => {
         <!-- Contact Form  -->
         <form
           class="space-y-4 w-full"
-          action="https://forms.hubspot.com/uploads/form/v2/48040344/7228c492-78f9-414e-a077-a85ea033dbe8"
-          method="POST"
           @submit="handleSubmit"
         >
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-7">
