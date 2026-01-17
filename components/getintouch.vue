@@ -12,12 +12,14 @@ const formData = ref({
 const handleSubmit = (event: Event) => {
   event.preventDefault();
 
-  const subject = encodeURIComponent(`Message from ${formData.value.firstname}`);
+  const subject = encodeURIComponent(
+    `Message from ${formData.value.firstname}`,
+  );
   const body = encodeURIComponent(
-    `Name: ${formData.value.firstname}\nEmail: ${formData.value.email}\n\nMessage:\n${formData.value.message}`
+    `Name: ${formData.value.firstname}\nEmail: ${formData.value.email}\n\nMessage:\n${formData.value.message}`,
   );
 
-  window.location.href = `mailto:robi@robiharid.com?subject=${subject}&body=${body}`;
+  window.location.href = `mailto:robiharid@gmail.com?subject=${subject}&body=${body}`;
 
   formData.value.email = "";
   formData.value.firstname = "";
@@ -26,28 +28,55 @@ const handleSubmit = (event: Event) => {
 </script>
 
 <template>
-  <div id="contact" class="bg-[#0b0c0e] w-full py-[80px] px-8 lg:px-[120px] flex items-center justify-center">
-    <div class="max-w-[1200px] w-full flex flex-col lg:flex-row items-end justify-between gap-8 text-white rounded-xl my-10 lg:my-16">
+  <div
+    id="contact"
+    class="bg-[#0b0c0e] w-full py-[80px] px-8 lg:px-[120px] flex items-center justify-center"
+  >
+    <div
+      class="max-w-[1200px] w-full flex flex-col lg:flex-row items-end justify-between gap-8 text-white rounded-xl my-10 lg:my-16"
+    >
       <!-- Contact Information -->
-      <div v-motion-slide-visible-left :delay="200" class="flex-1 flex flex-col gap-8">
+      <div
+        v-motion-slide-visible-left
+        :delay="200"
+        class="flex-1 flex flex-col gap-8"
+      >
         <div
           class="bg-[#100f17] text-white rounded-full w-12 h-12 lg:w-14 lg:h-14 flex items-center justify-center text-lg lg:text-xl font-bold border border-[#FFFFFF24]"
         >
           #
         </div>
-        <h2 class="text-[32px] sm:text-[40px] md:text-[48px] font-[500] leading-[1.17] tracking-[-1px]">Get In Touch</h2>
+        <h2
+          class="text-[32px] sm:text-[40px] md:text-[48px] font-[500] leading-[1.17] tracking-[-1px]"
+        >
+          Get In Touch
+        </h2>
         <p class="text-gray-300 text-base md:text-lg leading-relaxed">
-          To get in touch with Robi, learn more about RecruitMate AI or book keynote speaking events, please contact Robi through the form below.
+          To get in touch with Robi, learn more about RecruitMate AI or book
+          keynote speaking events, please contact Robi through the form below.
         </p>
 
         <!-- Contact Form  -->
-        <form
-          class="space-y-4 w-full"
-          @submit="handleSubmit"
-        >
+        <form class="space-y-4 w-full" @submit="handleSubmit">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-7">
-            <Input v-model="formData.email" name="email" placeholder="example@example.com" type="email" label="Email" size="medium" required />
-            <Input v-model="formData.firstname" name="firstname" placeholder="John Doe" type="text" label="Name" size="medium" required />
+            <Input
+              v-model="formData.email"
+              name="email"
+              placeholder="example@example.com"
+              type="email"
+              label="Email"
+              size="medium"
+              required
+            />
+            <Input
+              v-model="formData.firstname"
+              name="firstname"
+              placeholder="John Doe"
+              type="text"
+              label="Name"
+              size="medium"
+              required
+            />
           </div>
           <div>
             <label class="block text-gray-300">
