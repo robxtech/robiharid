@@ -13,7 +13,6 @@
     "@nuxt/fonts": "^0.10.3",
     "@nuxt/image": "^1.8.1",
     "@nuxt/scripts": "^0.9.5",
-    "@nuxthub/core": "^0.8.10",
     "@nuxtjs/tailwindcss": "^6.12.2",
     "@vueuse/motion": "^2.2.6",
     "nuxt": "^3.14.1592",

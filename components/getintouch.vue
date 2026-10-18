@@ -2,6 +2,7 @@
 import { ref } from "vue";
 import Button from "./ui/button.vue";
 import Input from "./ui/input.vue";
+import { toast } from "vue-sonner";
 
 const formData = ref({
   email: "",
@@ -9,21 +10,36 @@ const formData = ref({
   message: "",
 });
 
-const handleSubmit = (event: Event) => {
+const sending = ref(false);
+
+const handleSubmit = async (event: Event) => {
   event.preventDefault();
-
-  const subject = encodeURIComponent(
-    `Message from ${formData.value.firstname}`,
-  );
-  const body = encodeURIComponent(
-    `Name: ${formData.value.firstname}\nEmail: ${formData.value.email}\n\nMessage:\n${formData.value.message}`,
-  );
-
-  window.location.href = `mailto:robiharid@gmail.com?subject=${subject}&body=${body}`;
-
-  formData.value.email = "";
-  formData.value.firstname = "";
-  formData.value.message = "";
+  if (sending.value) return;
+  sending.value = true;
+  try {
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Accept: "application/json" },
+      body: JSON.stringify({
+        access_key: "f4fa783b-e8ba-4a0c-9634-80bc5ff06077",
+        subject: `Message from ${formData.value.firstname} (robiharid.co.uk)`,
+        from_name: formData.value.firstname,
+        name: formData.value.firstname,
+        email: formData.value.email,
+        message: formData.value.message,
+      }),
+    });
+    const data = await res.json();
+    if (!data.success) throw new Error(data.message);
+    toast.success("Thanks! Your message has been sent.");
+    formData.value.email = "";
+    formData.value.firstname = "";
+    formData.value.message = "";
+  } catch (e) {
+    toast.error("Sorry, something went wrong. Please email robiharid@gmail.com directly.");
+  } finally {
+    sending.value = false;
+  }
 };
 </script>
 
